@@ -1,0 +1,23 @@
+name: "Yueqi Feng"
+output_dir: "."
+navbar:
+  title: "Yueqi(Kiki) Feng"
+  href: index.html
+  left:
+    - text: "Education"
+      href: education.html
+    - text: "Experience"
+      href: practical.html
+    - text: "Blog"
+      href: blog.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: mailto:<yueqifeng19970831@163.com>
+    - icon: fa-github fa-lg
+      href: http://github.com/Kiki0831/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/yueqi-feng-88b224190/
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/Kiki16608269
+output:
+  html_document
