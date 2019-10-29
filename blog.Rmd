@@ -1,0 +1,147 @@
+---
+title: "How to make plots with plotly"
+---
+ <br />
+Plot.ly specializes in online dynamic data visualizations. I use babynames package as an example to show you how to explore the data set with babies with the same names as Maroon5.
+
+ <br />
+
+### Load the required packages
+```{r,message=FALSE,warning=FALSE}
+library(babynames)
+library(plotly)
+library(tidyverse)
+```
+
+ <br />
+
+### Explore the data
+```{r}
+head(babynames)
+summary(babynames)
+```
+ <br />
+
+Filter the data to grab boy babies with Maroon5 names.
+ <br />
+```{r}
+Maroon5 <- babynames %>%
+  filter(name %in% c("Adam","Jasse","Mickey","James","Matt","Paul","Sam") & sex == "M")
+```
+ <br />
+
+### Make a plot
+Plot the number of babies with each Maroon5 name with ggplot.
+ <br />
+```{r}
+Maroon5.plot.n <- ggplot(data = Maroon5,
+                         aes(x = year, y=n,color = name)) +
+                  geom_line(size =2) + 
+  ggtitle("Babies with the same names as Maroon5") +
+  xlab("Year") + ylab("The number of babies") +
+  theme(axis.text.y = element_text(size=8),
+        axis.title = element_text(size=10),
+        plot.title = element_text(size=12,hjust = 0.5)) 
+
+Maroon5.plot.n 
+```
+ <br />
+Plot the proportion of babies with each Maroon5 name with ggplot.
+ <br />
+
+```{r}
+Maroon5.plot <- ggplot(data = Maroon5,
+                       aes(x = year, y = prop, color = name)) +
+  geom_line(size=2) + ggtitle("Babies with the same names as Maroon5") +
+  xlab("Year") + ylab("The proportion of babies") +
+  theme(axis.text.y = element_text(size=8),
+        axis.title = element_text(size=10),
+        plot.title = element_text(size=12,hjust = 0.5)) 
+
+Maroon5.plot
+```
+ <br />
+Plot.ly can convert any ggplot2 object into plotly object using the "ggplotly()" function.
+ <br />
+```{r}
+ggplotly(Maroon5.plot.n)
+```
+
+```{r}
+ggplotly(Maroon5.plot)
+```
+
+You can hover over specific data-points or you can also compare values for all lines at one x value.
+
+ <br />
+ 
+### Extended example: Historical baby names
+I know you might think these plots are too simple and now let's create a more complicated plot with ggplot and ggplotly.We will use the make_babynames_dist() function in the mdsr package to add some more convenient variables to our dataset and to filter for only the data that is relevant to people alive in 2014.
+ <br />
+```{r,message=FALSE,warning=FALSE}
+library(mdsr)
+BabynamesDist <- make_babynames_dist()
+head(BabynamesDist)
+```
+ <br />
+First we need to filter the data so that we only have babies with the name David who are male.
+ <br />
+```{r}
+david <- BabynamesDist %>%
+  filter(name =="David" & sex == "M")
+name_plot <- ggplot(data = david)
+```
+ <br />
+Now we will plot the number of David's born each year who are estimated to be alive on January 1,2014.We will get that estimate by multipling the number of Davids born in a year by the probability that a person from that year will be alive on January 1,2014.
+ <br />
+```{r}
+name_plot <- name_plot +
+  geom_bar(stat = 'identity', aes(x=year,y=count_thousands * alive_prob),
+           fill = "#c1dfed",
+           colour = "white") 
+name_plot
+```
+ 
+ <br />
+Now we will add the line for the number of Davids born each year to our plot.
+ <br /n>
+```{r}
+name_plot <- name_plot + geom_line(aes(x = year, y=count_thousands),
+                                   size =1)
+name_plot
+```
+
+  <br />
+We can also update our axis labels.
+ <br /n>
+```{r}
+name_plot <- name_plot +
+  ylab('Number of People (thousands)') +
+  xlab(NULL) +
+  theme(axis.text = element_text(size = 8),
+        axis.title = element_text(size = 10,face = "bold"),
+        plot.title = element_text(hjust = 0.5)) + 
+  ggtitle("Age Distribution of American Boys Named David")
+name_plot
+```
+ 
+  <br />
+Now,we can use ggplotly!
+ <br /n>
+```{r,message=FALSE,warning=FALSE}
+ggplotly(name_plot)
+```
+ 
+ <br />
+When you finish reading this blog, I believe that you have some clues to make plots with plotly.Just use it in your daily work!
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
