@@ -2,7 +2,7 @@
 title: "How to make plots with plotly"
 ---
  <br />
-Plot.ly specializes in online dynamic data visualizations. I use babynames package as an example to show you how to explore the data set with babies with the same names as Maroon5.
+Plot.ly specializes in online dynamic data visualizations. I will use babynames package as an example to show you how to explore the data set with babies with the same names as members of the Maroon5 band.
 
  <br />
 
@@ -22,7 +22,7 @@ summary(babynames)
 ```
  <br />
 
-Filter the data to grab boy babies with Maroon5 names.
+Filter the data to grab names of male babies who have the same names as members of the Maroon5 band.
  <br />
 ```{r}
 Maroon5 <- babynames %>%
@@ -76,7 +76,7 @@ You can hover over specific data-points or you can also compare values for all l
  <br />
  
 ### Extended example: Historical baby names
-I know you might think these plots are too simple and now let's create a more complicated plot with ggplot and ggplotly.We will use the make_babynames_dist() function in the mdsr package to add some more convenient variables to our dataset and to filter for only the data that is relevant to people alive in 2014.
+I know you might think these plots are too simple, so let's create a more complicated plot with ggplot and ggplotly.We will use the make_babynames_dist() function in the mdsr package to add some more convenient variables to our dataset and to filter for only the data that is relevant to people alive in 2014.
  <br />
 ```{r,message=FALSE,warning=FALSE}
 library(mdsr)
@@ -133,7 +133,7 @@ ggplotly(name_plot)
 ```
  
  <br />
-When you finish reading this blog, I believe that you have some clues to make plots with plotly.Just use it in your daily work!
+When you finish reading this blog, I believe you should have some clues about how to make plots with plotly.Just use it in your daily work!
  
  
  
