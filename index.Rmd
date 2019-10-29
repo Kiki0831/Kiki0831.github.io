@@ -1,0 +1,12 @@
+ <br />
+ <br />
+ 
+<img src="images/kiki1.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
+
+Hi, my name is Yueqi(Kiki) Feng.I am a biostatistics and data science student in Weil Cornell Medicine.I am now actively seeking a summer internship opportunity as a Data Analyst or Business Analyst.
+
+My practical experiences demonstrate my problem-solving and leadership skills. During my internship at Roland Berger, I helped my team in providing marketing strategies to two cosmetic brands. I analyzed customer preference, as well as the market size and product pricing of their competitors, leading to determining their brand positioning (Please check the [Reference letter](files/referenceletter_RB.pdf)). As the leader of a study on economics effects of Pikachu IP team, I took the initiatives to assign tasks to team members based on their abilities and traits, and organize discussions about dealing with the problems we encountered.
+
+In addition, my diverse academic experiences manifest my high learning agility and my enthusiasm for data and technology. My biotechnology and business administration undergraduate studies provided an opportunity to acquire knowledge of different areas. Since I believe that data and technology served for pushing industrial progress, I chose to pursue an in-depth study of biostatistics and data science in Cornell, where I have acquired analytical and quantitative skills critical to problem-solving.
+ <br />
+My full resume is available [here](files/resume_YueqiFeng.pdf).
