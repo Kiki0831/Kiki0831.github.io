@@ -1,0 +1,31 @@
+---
+output: html_document
+---
+
+<br />
+
+### Practical Experience
+
+<br />
+
+#### A shiny app for Happy Valley Meat (HVM) Company
+
+In this semester (Sep-Dec,2019), Professor in Data Science class assigned a project that we would use a shiny app for our client Happy Valley Meet (HVM) Company. The idea is to persuade customers to make choices with less environmental impact; instead of buying 100 pounds of hangar steak, which requires 67 animals, could they instead buy 100 pounds of tenderloin, which would only require 10 animals? As the leader of our team, I took the initiative to assign tasks to team members based on their abilities and traits, organize discussions about dealing with the problems we encountered, such as discrepancies in understanding data and code errors when analyzing data. I spent 10 hours to learn shiny app and make a template, which helped my teammate to figure out some fundamental problems, and we spent another 5 hours to modify codes to make this app more organized and attractive. Finally, we achieved high points, and most importantly, our shiny app was selected by Dan, the CEO of HVM, as one of the top 3 apps. This praise was a huge encouragement for us.
+This is our shiny app website [here](https://datascience-midterm.shinyapps.io/hvm_app/).
+
+ <br />
+
+#### Consultant Intern in Roland Berger
+
+During summer vacation in 2019, I worked as an assistant in Roland Berger. The project was about helping with 2 Japan cosmetic brands with their future China strategy (They planed to enter China around 2022). We were working on Phase 2 modules, which is the marketing strategy of these 2 brands, including brand positioning, Product, Pricing, Place(counter design/layout ) and Promotion tactics. My daily work included desk research of key potential competitors (luxury cosmetic brands like CPB, Dior, Chanel, TF, Gualian), case study and slides formulation, data collection, etc. Although the period of internship was short , I was praised by my supervisor, which greatly improved my self-confidence. I also accumulated amount of domain knowledge and practiced some tools a lot during this experience, including Excel, PowerPoint, R, Python and Tableau.
+The reference letter from my supervisor is available [here](files/referenceletter_RB.pdf).
+
+<br />
+
+### Research Experience
+
+<br />
+
+#### A Study of the Economic Effects of Pikachu IP
+
+I participated in an online internship in June 2019. The project was a study of the economic effects of Pikachu IP. I worked as the team leader in the project team and led the team members to list nearly 40 tasks based on the existing six data sheets, including data comparison of Pikachu dolls and non-Pikachu figurine, sales of related products with changes before and after the film's listing, emotional analysis and theme analysis of movie reviews, microblog commentary reviews. After properly assigning the tasks of each group member, I used my previous self-study python, R, Tableau, etc. to process and analyze the data. Finally, the team members completed the text report and ppt display, which was recognized and praised by my supervisor.
