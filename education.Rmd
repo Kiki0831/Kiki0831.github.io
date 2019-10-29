@@ -1,0 +1,14 @@
+---
+output: html_document
+---
+ <br />
+ <br />
+ 
+### MS in Cornell University Weil Graduate School of Medical Science
+I am a Biostatistics and Data Science student in Cornell University Weil Graduate School of Medical Science.This programme provides me opportunities to throw myself in programming and I have acquired sophisticated skills about R, like data wrangling, data visualization, statistical functions in R, shinny and R package,in this semester (Sept-Dec 2019). I will learn Data Management(SQL), Statistical learning and Causal Inference with Machine Learning in following semesters.
+
+ <br />
+ 
+### BS and BBA in China Pharmaceutical University
+I compeleted my bachelor's degree in China Pharmaceutical University, where I studied biotechlogy and Business Administration.I conducted many biological experiments during my undergraduate stuy. If you are interested in my academic exprience, you can look through my previous CV [here](files/CV_YueqiFeng.pdf).
+
